@@ -1,0 +1,142 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/tshirtImage"
+        android:layout_width="285dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/tshirt1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heavy-Metal"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jersey"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/checkboxSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkboxMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkboxLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#37474F"/>
+
+    <Switch
+        android:id="@+id/switchFeature"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Eco-Friendly Material"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#00838F"/>
+
+    <!-- Horizontal LinearLayout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change T-shirt"
+            android:backgroundTint="#6200EA"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:backgroundTint="#00897B"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected info will be displayed here"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#37474F"/>
+</LinearLayout>
